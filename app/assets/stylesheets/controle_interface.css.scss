@@ -1,0 +1,258 @@
+// Place all the styles related to the ControleInterface controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container-artigos {
+  margin-top: 100px;
+  height:600px;
+  padding:30px;
+  border-radius: 8px;
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+  background-color:#FFFFFF;
+  box-shadow: 0 5px 10px #AAAAAA;
+  overflow: hidden;
+}
+
+.container-artigos article {
+  height: 597px;
+  margin-bottom: 60px;
+  border: 1px solid #C9C0BB;
+}
+
+.container-artigos article header {
+  padding: 15px;
+  height: 30px;
+  color: white;
+}
+
+#conteudo-artigos-padrao-interface {
+  padding: 10px;
+  height: 462px;
+}
+
+#conteudo-artigos-padrao-interface div:last-child {  border-left: 1px solid #DDDDDD; }
+
+
+
+.painel-descricao-padrao-interface {
+  width: 447px;
+  float: left;
+  height: 450px;
+  padding: 10px;
+  overflow: auto;
+}
+
+
+.moldura {
+  height: 600px;
+  overflow:hidden;
+}
+
+.painel-descricao-padrao-interface ol { margin: 25px 0 0 20px ; }
+.painel-descricao-padrao-interface ol li { margin-bottom: 20px; }
+.container-artigos article footer {
+  margin:0;
+  box-shadow:none;
+  padding: 15px;
+  height: 18px;
+}
+
+.container-artigos article footer ul li {
+  display:inline-block;
+}
+
+.container-artigos article footer ul li:last-child {
+  margin-left: 400px;
+}
+
+#demonstracao-controle-interface {
+  padding: 0;
+  height:90px;
+}
+
+#demonstracao-controle-interface ul { margin-top: 30px; }
+#demonstracao-controle-interface ul li {
+  margin-right: 20px;
+  display:inline-block;
+}
+
+#padrao-radio-button  footer ul li:last-child {
+  margin-left: 364px;
+}
+
+#padrao-drop-down footer ul li:last-child {
+  margin-left: 283px;
+  
+}
+
+
+#botao-avancar-checkbox,
+#botao-avancar-radio-button,
+#botao-avancar-tree-view,
+#botao-avancar-drop-down,
+#botao-avancar-menu-contexto,
+#botao-avancar-fim
+{
+  visibility: hidden;
+}
+
+#mensagem-fim-padrao-interface ul li a { visibility: visible; }
+
+#area-menu-contexto{
+  padding:30px;
+  width: 300px;
+  height: 250px;
+  border: 1px solid chocolate;
+  background-color:#CDCDCD;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+#menu-contexto-1 {
+  margin: 1em;
+  float: left;
+}
+
+#menu-contexto-1 ul {
+  padding: 0px;
+        margin: 0em 1em;
+}
+
+#menu-contexto-1 li {
+  width: 115px;
+
+        padding: 5px 5px;
+        margin: 2px 0px;
+
+}
+
+
+#mapa-canvas{
+   height:452px;
+   width:446px;
+}
+
+
+#botao-avancar-maps-pesquisa { 
+  visibility:visible; 
+  margin-left: 448px;
+}
+
+#mapa-canvas-pesquisa{
+  width:100%;
+  height:100%;
+}
+
+#janela-pesquisar-maps {
+  visibility: visible;
+  margin-left: 191px;
+}
+
+.container-formulario-pesquisar-mapas {
+  width: 800px;
+  height: 600px;
+}
+
+#formulario-pesquisar-mapas  { padding: 15px; }
+#formulario-pesquisar-mapas fieldset label { margin-bottom: 5px; }
+#formulario-pesquisar-mapas fieldset a { margin-left: 640px; }
+#formulario-pesquisar-mapas fieldset {
+  color:#444;
+  border: 1px solid #C9C0BB;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#formulario-pesquisar-mapas fieldset:first-child { margin-bottom: 20px; }
+#formulario-pesquisar-mapas input[type='text'] {
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 0 4px #AAAAAA;
+    color: #555555;
+    font-size: 16px;
+    margin: 4px 0 20px;
+    padding: 8px;
+    width: 718px;
+}
+
+#pesquisar-maps header {
+ padding: 15px;
+  height: 30px;
+  color: white;
+}
+
+
+#botao-avancar-fim { margin-left: 349px; }
+#botao-voltar-maps-pesquisa { 
+  visibility: visible;
+  margin-left: 0px;
+}
+
+#mensagem-fim-padrao-interface {
+  margin-top: 15px;
+  height: 350px;
+  width:918px;
+}
+
+#titulo-fim-padrao-interface {
+  padding: 15px 10px;
+  border-bottom: 2px solid #C9C0BB;
+}
+#titulo-fim-padrao-interface h3 {
+  font-family: 'Ubuntu', sans-serif;
+  color:#666;
+  font-weight:300;
+  font-size: 26pt;
+  text-shadow: 2px 2px 4px #666;
+}
+
+
+#mensagem-fim-padrao-interface p {
+  font-size: 14pt;
+}
+
+#mensagem-fim-padrao-interface ul {
+  padding: 10px;
+}
+#mensagem-fim-padrao-interface ul li {
+   margin: 10px;
+  text-align:justify;
+}
+#botao-avancar-menu-contexto{
+  margin-left: -280px;
+}
+
+#botao-sair-padrao-inteface {
+  visibility: visible;
+  margin-left: 400px;
+}
+
+
+#disableMenus{
+  margin-left: 50px;
+}
+
+.botao-2 {
+    background-color: #DDDDDD;
+    background-image: -moz-linear-gradient(center top , #EEEEEE, #CCCCCC);
+    border: 1px solid #777777;
+    border-radius: 0.2em 0.2em 0.2em 0.2em;
+    box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.8) inset, 0 1px 0 rgba(0, 0, 0, 0.3);
+    color: #333333;
+    display: inline-block;
+    font: bold 0.9em Arial,Helvetica;
+    margin: 0.5em;
+    padding: 0 0.5em;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    white-space: nowrap;
+}
+
+.botao-2[disabled], .botao-2[disabled]:hover, .botao-2.disabled, .botao-2.disabled:hover {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-color: #AAAAAA;
+    box-shadow: none;
+    color: #AAAAAA;
+    cursor: default;
+    position: static;
+    text-shadow: none;
+}

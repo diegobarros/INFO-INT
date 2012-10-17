@@ -1,0 +1,39 @@
+<header id="cabecalho">
+	<div id="logo-pequeno">
+		<%= link_to home_index_path do %>
+			<h1>INFOINT</h1>
+		<% end %>
+	</div>
+</header>
+<div id="container">
+	<section>
+		<div id="menu-inicio">
+			<article>
+				<header class="verde"><h2>Hardware</h2></header>
+				<div>
+					<ul>
+						<li class="opcao-3"><h3><%= link_to "Teclado", teclado_index_path %></h3></li>
+					</ul>
+				</div>
+			</article>
+			
+			<article>
+				<header class="azul"><h2>Software</h2></header>
+				<div>
+					<ul>
+						<li class="opcao-4"><h3><%= link_to "Controles de Interfaces", controle_interface_index_path %></h3></li>
+					</ul>
+				</div>
+			</article>
+			
+			<article>
+				<header class="lilas"><h2>Jogos</h2></header>
+				<div>
+					<ul>
+						<li class="opcao-5"><h3><%= link_to "Abstração e Cognicao", abstracao_cognicao_index_path %></h3></li>
+					</ul>
+				</div>
+			</article>
+		</div>
+	</section>
+</div>

@@ -1,4 +1,34 @@
 INFOInt::Application.routes.draw do
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  
+  get "abstracao_cognicao/index"
+
+  get "abstracao_cognicao/memoria"
+
+  get "abstracao_cognicao/logica"
+
+  get "abstracao_cognicao/verbal"
+
+  get "controle_interface/index"
+
+  get "controle_interface/estudar_controle_interface"
+
+  get "inicio/index"
+
+  get "teclado/index"
+
+  get "teclado/estudar_teclado"
+
+  get "teclado/exercitar_teclado"
+  
+  get "teclado/visualizar_tecla"
+  
+  get "teclado/verificar_codigo"
+
+  get "home/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +78,7 @@ INFOInt::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+    root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 

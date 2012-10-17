@@ -1,0 +1,455 @@
+<header id="cabecalho">
+	<div id="logo-pequeno">
+		<%= link_to controle_interface_index_path do %>
+			<h1>INFOINT</h1>
+		<% end %>
+	</div>
+</header>
+<div id="container" onload="inicializaMapa()">
+	<section class="container-artigos">
+		
+		<div class="moldura">
+		
+			
+			<article id="padrao-checkbox">
+				<header class="azul">
+					<h2>Controles de Interfaces - Checkboxes</h2>
+				</header>
+				<div id="conteudo-artigos-padrao-interface" >
+				
+					<div class="painel-descricao-padrao-interface ">
+						<div id="demonstracao-controle-interface">
+							<p>Os quadrados abaixo são chamados de <b>Checkboxes</b></p>
+							<ul>
+								<li>
+									<input type="checkbox" checked="true" />
+									<label>Checkbox 1</label>
+								</li>
+								<li>
+									<input type="checkbox"  />
+									<label>Checkbox 2</label>
+								</li>
+								<li>
+									<input type="checkbox"  />
+									<label>Checkbox 3</label>
+								</li>
+							</ul>
+						</div>
+					
+					</div>
+					<div class="painel-descricao-padrao-interface ">
+						<p>Note que:</p>
+						<ol>
+							<% @controles_interfaces.each do |controles| %>
+							
+								<% if controles.id == 1 %>
+							
+									<% controles.instrucao_usos.each do |instrucao_uso| %>
+										<%=content_tag(:li, instrucao_uso.instrucao )%>
+									<% end %>
+								
+								<%end%>
+							
+							<%end%>
+						</ol>
+					</div>
+
+				</div>	
+			
+				<footer>
+					<ul>
+						<li><span>Para ir para a próxma página, marque o Checkbox:</span></li>
+						<li>
+							<input id="checkbox-avancar" type="checkbox" />
+							<label>Avançar</label>
+						</li>
+						<li>
+							<a id="botao-avancar-checkbox" href="#padrao-radio-button" class="botao botao-azul">Avançar</a>
+						</li>
+					</ul>
+				</footer>
+			
+			</article>
+		
+		
+			<!-- Padrão Radio Button -->
+			<article id="padrao-radio-button">
+				<header class="azul">
+					<h2>Controles de Interfaces - Radio Button</h2>
+				</header>
+				<div id="conteudo-artigos-padrao-interface">
+					
+					<div class="painel-descricao-padrao-interface ">
+						<div id="demonstracao-controle-interface">
+							<p>Os quadrados abaixo são chamados de <b>Radio Buttons</b></p>
+							<ul>
+								<li>
+									<input name="exemplo-radio-button" type="radio" checked="true" />
+									<label>Radio Button 1</label>
+								</li>
+								<li>
+									<input name="exemplo-radio-button" type="radio" />
+									<label>Radio Button 2</label>
+								</li>
+								<li>
+									<input name="exemplo-radio-button" type="radio"  />
+									<label>Radio Button 3</label>
+								</li>
+							</ul>
+						</div>
+					
+					</div>
+					<div class="painel-descricao-padrao-interface ">
+						<p>Note que:</p>
+						<ol>
+							<% @controles_interfaces.each do |controles| %>
+								
+								<% if controles.id == 2 %>
+							
+									<% controles.instrucao_usos.each do |instrucao_uso| %>
+										<%=content_tag(:li, instrucao_uso.instrucao )%>
+									<% end %>
+								
+								<%end%>
+							
+							<%end%>
+						</ol>
+					</div>
+
+				</div>	
+			
+				<footer>
+					<ul>
+						<li><span>Para ir para a próxma página, marque o Radiobutton:</span></li>
+						<li>
+							<input id="radio-button-avancar-sim" name="radio-button-avancar" type="radio" value="Sim" />
+							<label>Sim</label>
+							<input id="radio-button-avancar-nao" name="radio-button-avancar" type="radio" value="Não" checked="true" />
+							<label>Não</label>
+						</li>
+						<li>
+							<a id="botao-avancar-radio-button" href="#padrao-drop-down" class="botao botao-azul">Avançar</a>
+						</li>
+					</ul>
+				</footer>
+			
+			</article>
+
+			
+			<!-- Padrão Dropdown -->
+			<article id="padrao-drop-down">
+				<header class="azul">
+					<h2>Controles de Interfaces - Dropdown</h2>
+				</header>
+				<div id="conteudo-artigos-padrao-interface">
+				
+					<div class="painel-descricao-padrao-interface ">
+						<div id="demonstracao-controle-interface">
+							<p>Os quadrados abaixo são chamados de <b>Dropdown</b></p>
+							<ul>
+								<li>
+									<label>Números</label>
+									<select>
+										<% (0..9).to_a.each do |numero| %>
+											<option><%= numero %></option>
+										<%end%>
+									</select>
+								</li>
+								<li>
+									<label>Alfabeto</label>
+									<select>
+										<% ('A'..'Z').to_a.each do |letra|%>
+											<option><%= letra %></option>
+										<%end%>
+									</select>
+								</li>
+								<li>
+									<label>Dia da Semana</label>
+									<select>
+										<option>Domingo</option>
+										<option>Segunda</option>
+										<option>Terça</option>
+										<option>Quarta</option>
+										<option>Quinta</option>
+										<option>Sexta</option>
+										<option>Sábado</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					
+					</div>
+					<div class="painel-descricao-padrao-interface ">
+						<p>Note que:</p>
+						<ol>
+							<% @controles_interfaces.each do |controles| %>
+								
+								<% if controles.id == 3 %>
+							
+									<% controles.instrucao_usos.each do |instrucao_uso| %>
+										<%=content_tag(:li, instrucao_uso.instrucao )%>
+									<% end %>
+								
+								<%end%>
+							
+							<%end%>
+						</ol>
+					</div>
+
+				</div>
+			
+				<footer>
+					<ul>
+						<li><span>Para ir para a próxma página, escolha o valor avançar no dropdown:</span></li>
+						
+					
+						<li>
+							<select id="drop-down-avancar">
+								<% (0..9).to_a.each do |numero| %>
+									<% ('A'..'Z').to_a.each do |letra|%>
+										<option><%= letra %></option>
+									<%end%>
+										<option><%= numero %></option>
+								<%end%>
+								<option>Avançar</option>
+							</select>
+						</li>
+						
+						<li><a id="botao-avancar-drop-down" href="#padrao-tree-view" class="botao botao-azul">Avançar</a></li>
+	
+					</ul>
+				</footer>
+			
+			</article>
+			
+			
+			<!-- Padrão Treeview -->
+			<article id="padrao-tree-view">
+				<header class="azul">
+					<h2>Controles de Interfaces - Treeview</h2>
+				</header>
+				<div id="conteudo-artigos-padrao-interface">
+				
+					<div class="painel-descricao-padrao-interface ">
+						<div id="demonstracao-controle-interface">
+							<p>O controle abaixo é chamado de <b>Treeview</b></p>
+														
+							<div id="tree"></div>
+						</div>
+					</div>
+					<div class="painel-descricao-padrao-interface ">
+						<p>Note que:</p>
+						<ol>
+							<% @controles_interfaces.each do |controles| %>
+								
+								<% if controles.id == 4 %>
+							
+									<% controles.instrucao_usos.each do |instrucao_uso| %>
+										<%=content_tag(:li, instrucao_uso.instrucao )%>
+									<% end %>
+								
+								<%end%>
+							
+							<%end%>
+						</ol>
+					</div>
+				</div>
+			
+				<footer>
+					<ul>
+						<li><span>Para ir para a próxma página, pesquise pela palavra avançar no controle acima e clique nela</span></li>
+						<li><a id="botao-avancar-tree-view" href="#padrao-menu-contexto" class="botao botao-azul">Avançar</a></li>
+					</ul>
+				</footer>
+			
+			</article>
+
+			
+			<!-- Padrão Menu Contexto -->
+			<article id="padrao-menu-contexto">
+				<header class="azul">
+					<h2>Controles de Interfaces - Menu Contexto</h2>
+				</header>
+				<div id="conteudo-artigos-padrao-interface">
+				
+					<div class="painel-descricao-padrao-interface ">
+						<div id="demonstracao-controle-interface">
+							<p>Os quadrados abaixo são chamados de <b>Dropdown</b></p>
+							
+							<div id="area-menu-contexto">
+								<span>Clique com o botão direito do mouse para visualizar o Menu Contexto</span>
+							</div>
+							
+							<div>
+								<div id="options">
+									<p>
+										<input  id="disableItems" type="button" value="Desabilitar Sair" class="botao-2" disabled="" />
+										<input  id="enableItems" class="botao-2" type="button" value="Habilitar Sair"  />
+									</p>
+									<p id="linha-botoes-2">
+										<input  id="disableMenus" class="botao-2" type="button" value="Desabilitar o menu" disabled=""   />
+										<input  id="enableMenus" class="botao-2" type="button" value="Habilitar o menu"  />
+									</p>
+								</div>
+							</div>
+							
+							<ul id="menu-contexto-1" class="contextMenu">
+								<li class="edit"><a href="#edit">Editar</a></li>
+								<li class="cut separator"><a href="#cut">Cortar</a></li>
+								<li class="copy"><a href="#copy">Copiar</a></li>
+								<li class="paste"><a href="#paste">Colar</a></li>
+								<li class="delete"><a href="#delete">Excluir</a></li>
+								<li class="quit separator"><a href="#quit">Sair</a></li>
+							</ul>
+							
+						</div>
+					
+					</div>
+					<div class="painel-descricao-padrao-interface ">
+						<p>Note que:</p>
+						<ol>
+							<% @controles_interfaces.each do |controles| %>
+								
+								<% if controles.id == 5 %>
+							
+									<% controles.instrucao_usos.each do |instrucao_uso| %>
+										<%=content_tag(:li, instrucao_uso.instrucao )%>
+									<% end %>
+								
+								<%end%>
+							
+							<%end%>
+						</ol>
+					</div>
+
+				</div>
+			
+				<footer>
+					<ul>
+						<li><span>Para ir para a próxima página, habilite a opção sair do menu contexto e clique nela</span></li>
+						<li><a id="botao-avancar-menu-contexto" href="#padrao-maps" class="botao botao-azul">Avançar</a></li>
+	
+					</ul>
+				</footer>
+			
+			</article>
+			
+			<!-- Padrão maps -->
+			<article id="padrao-maps">
+				
+				<header class="azul">
+					<h2>Controles de Interfaces - Mapas</h2>
+				</header>
+				<div id="conteudo-artigos-padrao-interface">
+					
+					<div class="painel-descricao-padrao-interface ">
+						<div id="mapa-canvas"></div>
+					</div>
+					
+					<div class="painel-descricao-padrao-interface ">
+						<p>Note que:</p>
+						<ol>
+							<% @controles_interfaces.each do |controles| %>
+								
+								<% if controles.id == 6 %>
+							
+									<% controles.instrucao_usos.each do |instrucao_uso| %>
+										<%=content_tag(:li, instrucao_uso.instrucao )%>
+									<% end %>
+								
+								<%end%>
+							
+							<%end%>
+						</ol>
+					</div>
+
+				</div>
+			
+				<footer>
+					<ul>
+						<li><a id="botao-avancar-maps-pesquisa" href="#padrao-maps-pesquisa" class="botao botao-azul">Avançar</a></li>
+					</ul>
+				</footer>
+			
+			</article>
+			
+			<article id="padrao-maps-pesquisa">
+				
+				<header class="azul">
+					<h2>Controles de Interfaces - Mapas</h2>
+				</header>
+				
+				<div id="conteudo-artigos-padrao-interface">
+					<div id="mapa-canvas-pesquisa"></div>
+				</div>
+			
+				<footer>
+					<ul>
+						<li id="mensagem-botao-maps"><span>Algumas Vezes quando clicamos em algum botão aparece uma nova janela. Experimente!</span></li>
+						<li><a id="janela-pesquisar-maps" href="#pesquisar-maps" class="botao botao-azul">Pesquisar</a></li>
+						<li><a id="botao-avancar-fim" href="#fim-padroes-interface" class="botao botao-azul">Avançar</a></li>
+					</ul>
+				</footer>
+			
+			</article>
+			
+			<article id="pesquisar-maps">
+				<header class="azul">
+					<h2>Controles de Interfaces - Mapas</h2>
+				</header>
+				<div id="conteudo-artigos-padrao-interface" class="container-formulario-pesquisar-mapas">
+					<form id="formulario-pesquisar-mapas">
+						<fieldset>
+							<legend>Endereço</legend>
+							<label>Endereço</label>
+							<input id="endereco-campo-pesquisar-mapas" type="text" spellcheck="true" required="true" />
+							<a id="botao-pesquisar-endereco-maps"  class="botao botao-azul">Pesquisar</a>
+						</fieldset>
+						<fieldset>
+							<legend>Rotas</legend>
+							<label>De</label>
+							<input id="endereco-origem-campo-pesquisar-mapas" type="text" spellcheck="true" required="true" />
+							<label>Para</label>
+							<input id="endereco-destino-campo-pesquisar-mapas" type="text" spellcheck="true" required="true" />
+							<a id="botao-pesquisar-rota-maps" href="#pesquisar-maps" class="botao botao-azul" accesskey="enter">Pesquisar</a>
+						</fieldset>
+					</form>
+				</div>
+				
+			</article>
+			
+			
+			<article id="fim-padroes-interface">
+				<header class="azul">
+					<h2>Controles de Interfaces - Fim</h2>
+				</header>
+				<div id="conteudo-artigos-padrao-interface">
+					<header id="titulo-fim-padrao-interface">
+						<h3>Parabéns!</h3>
+					</header>
+					<div id="mensagem-fim-padrao-interface" class="painel-descricao-padrao-interface ">
+						<p>Você concluiu o com sucesso o estudo dos padrões de interface!</p>
+						<p>Talvez você queira rever os padrões estudados</p>
+						<ul>
+							<li><a id="link-avancar-checkbox" href="#padrao-checkbox">Checkbox</a></li>
+							<li><a id="link-avancar-radio-button" href="#padrao-radio-button">Radio Button</a></li>
+							<li><a id="link-avancar-drop-down" href="#padrao-drop-down">Drop-down</a></li>
+							<li><a id="link-avancar-tree-view" href="#padrao-tree-view">Tree View</a></li>
+							<li><a id="link-avancar-menu-contexto" href="#padrao-menu-contexto">Menu Contexto</a></li>
+							<li><a id="link-avancar-padrao-maps" href="#padrao-maps">Maps</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<footer>
+					<ul>
+						<li><a id="botao-voltar-maps-pesquisa" href="#padrao-maps-pesquisa" class="botao botao-azul">Voltar</a></li>
+						<li><%= link_to "Sair", controle_interface_index_path, :id => "botao-sair-padrao-inteface", :class => "botao botao-azul" %></li>
+					</ul>
+				</footer>
+				
+			</article>
+
+		</div>
+	</section>
+</div>

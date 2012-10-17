@@ -12,4 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.scrollTo-1.4.2-min.js
+//= require jquery.transit.min.js
+//= require fancybox/jquery.fancybox.js
+//= require fancybox/jquery.fancybox.pack.js
+//= require jquery.contextMenu-1.01/jquery.contextMenu.js
 //= require_tree .
