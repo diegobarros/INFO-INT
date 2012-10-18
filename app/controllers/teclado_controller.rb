@@ -32,7 +32,7 @@ class TecladoController < ApplicationController
   
   def verificar_codigo
     
-    if verify_recaptcha :private_key => '6Le0xdUSAAAAAPpcJdtpeGOmxHfKEr-UMNuyk-rQ'
+    if verify_recaptcha :private_key => '6Lds6NcSAAAAAM1T-n0ccR_cmyWoAUVClkMP_VQB'
         session[:acertos] = params[:acertos].to_i.next
         redirect_to :controller => 'teclado', :action => 'exercitar_teclado', :acertos => params[:acertos]
     else
