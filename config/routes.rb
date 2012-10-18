@@ -1,4 +1,6 @@
 INFOInt::Application.routes.draw do
+  get "viagem_no_tempo/index"
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
