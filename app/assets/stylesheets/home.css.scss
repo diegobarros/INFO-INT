@@ -76,6 +76,7 @@ input[type='text'] {
 #logo-inicio {
   width: 240px;
   margin-top: 8px;
+  float:left;
 }
 
 #logo-inicio a {
@@ -289,6 +290,7 @@ footer div {
 #logos-tecnologias {
   margin-left: 500px; /* Para acrescentar mais um logo altere a margem esquerda*/
   padding-left:200px;
+  
 }
 
 
@@ -304,4 +306,10 @@ footer div {
   height:64px;
   padding-top:24px;
   margin-left:95px;
+}
+
+#container-google-tradutor {
+  float:left;
+  margin-left: 560px;
+ margin-top: 33px;
 }
