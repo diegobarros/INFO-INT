@@ -93,7 +93,7 @@ $(document).ready(function() {
 	
 	
 	// Habilita o botão para o dropdown
-	$("#drop-down-avancar option").click(function(){
+	$("#drop-down-avancar").click(function(){
 		var valorSelecionado = $("#drop-down-avancar option:selected").text();
 			
 		if (valorSelecionado == "Avançar") {
@@ -102,6 +102,10 @@ $(document).ready(function() {
 			$("#botao-avancar-drop-down").css("visibility", "hidden");
 		}
 	});
+	
+	
+	
+	
 
 		$('#menu-contexto-1').enableContextMenuItems('#quit');
 	
