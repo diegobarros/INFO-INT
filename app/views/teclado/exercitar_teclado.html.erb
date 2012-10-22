@@ -45,10 +45,45 @@
 							<li>
 								<%= link_to "Sair", teclado_index_path, :id => "sair-exercitar-teclado", :class =>"botao botao-azul", :value => " " %>
 							</li>
-							<li> </li>
+							<li id="botao-ajuda-exercicio-teclado"><div id="exercitar-teclado-link" href="#instrucoes-captcha" class="botao botao-azul">Ajuda</div></li>
 						</ul>
 					</footer>
 				</article>
+				
+				
+				<article id="instrucoes-captcha">
+					<header class="verde">
+						<h2>Sobre o Recaptcha</h2>
+					</header>
+					<div class="conteudo-ajuda">
+						<ul>
+							<li>
+								<p>Digite as palavras que você vê na caixa, em ordem e separadas por um espaço.</p>
+							</li>
+							
+							<li>
+								<p>Se você não tiver certeza de quais são as palavras, digite seu melhor palpite 
+								ou clique no botão "atualizar'' ao lado das palavras distorcidas.</p>
+							</li>
+							
+							<li>
+								<p>Ao digitar as palavras na caixa, além de praticar você também ajuda a digitalizar textos que foram 
+								escritos antes da era do computador. As palavras que você vê foram tiradas diretamente 
+								de textos antigos que estão sendo digitalizados e armazenados em formato digital para 
+								ser preservados e ficar mais acessíveis para o mundo. Visto que algumas das palavras nos 
+								textos são difíceis para os computadores processarem, estamos usando os resultados de seus 
+								esforços para ajudar a decifrá-las.</p>
+							</li>
+
+						</ul>
+						
+					 	<span id ="botao-fechar-janela-ajuda" class="botao botao-azul">OK</span>
+ 
+					</div>
+					
+					
+				</article>
+
 		</div>
 	</section>
 </div>

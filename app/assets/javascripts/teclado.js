@@ -10,4 +10,16 @@ $(document).ready(function(){
 	$("#shiftEsquerdo").addClass("shift");
 	$("#menu").addClass("menu");
 	$("#windows").addClass("windows");
+	$("#exercitar-teclado-link").fancybox();
+	
+	$("#exercitar-teclado-link").click(function(){
+		$("#exercitar-teclado-link").fancybox();
+	});
+	
+	$("#botao-fechar-janela-ajuda").click(function(){
+		$.fancybox.close();
+	});
+	
+	
+	
 });
