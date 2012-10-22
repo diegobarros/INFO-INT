@@ -59,9 +59,7 @@ var test_data =
 	             1, { label: "Downloads", href:"#" }];
 
 $(document).ready(function() {
-	
-	
-	
+
 	$("#janela-pesquisar-maps").fancybox();
 
 	$("#checkbox-avancar").click(function(){

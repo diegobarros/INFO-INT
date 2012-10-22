@@ -1,4 +1,6 @@
 INFOInt::Application.routes.draw do
+  get "avaliacao/index"
+
   get "viagem_no_tempo/index"
 
   ActiveAdmin.routes(self)
